@@ -1,3 +1,16 @@
+<?php 
+$curl = curl_init();
+
+curl_setopt($curl, CURLOPT_URL, 'https://developers.google.com/youtube/v3/docs/channels/?part=snippet,statistic&id=UCDQPB4UMgi3gjTFwqXui1vg&key=AIzaSyAWeO15qTlkXhBAX_jEhROXfUgvLlZ7mAM');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+$result = curl_exec($curl);
+
+curl_close();
+
+$result = json_decode($result, true);
+var_dump($result);
+?>
 
 <!doctype html>
 <html lang="en">
@@ -18,7 +31,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#home">Sandhika Galih</a>
+        <a class="navbar-brand" href="#home">Dian Sayyidah Khairani</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
