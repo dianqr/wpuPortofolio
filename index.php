@@ -9,6 +9,9 @@ curl_close($curl);
 
 $result = json_decode($result, true);
 $youtubeProfilePic = $result['items'][0]['snippey']['thumbnails']['medium']['url'];
+$channelName = $result['item'][0]['snippet']['title'];
+$subscriber = $result['item'][0]['snippey']['statistics']['subscriberCount'];
+
 ?>
 
 <!doctype html>
@@ -98,8 +101,8 @@ $youtubeProfilePic = $result['items'][0]['snippey']['thumbnails']['medium']['url
                 <img src="<?= $youtubeProfilePic; ?>" width="200" class="rounded-circle img-thumbnail">
               </div>
               <div class="col-md-8">
-                <h5>WebProgramingUnpas</h5>
-                <p>7000 Subscribers.</p>
+                <h5><?= $channelName; ?></h5>
+                <p><?= $subscriber; ?></p>
               </div>
             </div>
             <div class="row mt-3 pb-3">
