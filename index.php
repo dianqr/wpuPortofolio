@@ -1,15 +1,14 @@
 <?php 
 $curl = curl_init();
-
-curl_setopt($curl, CURLOPT_URL, 'https://developers.google.com/youtube/v3/docs/channels/?part=snippet,statistic&id=UCDQPB4UMgi3gjTFwqXui1vg&key=AIzaSyAWeO15qTlkXhBAX_jEhROXfUgvLlZ7mAM');
+curl_setopt($curl, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCzCedBCSSltI1TFd3bKyN6g&key=AIzaSyBmK5hhKlRz1Dq0DaRTjMI55-ZT5k7cfXk');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
 $result = curl_exec($curl);
 
-curl_close();
+curl_close($curl);
 
 $result = json_decode($result, true);
-var_dump($result);
+$youtubeProfilePic = $result['items'][0]['snippey']['thumbnails']['medium']['url'];
 ?>
 
 <!doctype html>
@@ -96,7 +95,7 @@ var_dump($result);
           <div class="col-md-5">
             <div class="row">
               <div class="col-md-4">
-                <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail">
+                <img src="<?= $youtubeProfilePic; ?>" width="200" class="rounded-circle img-thumbnail">
               </div>
               <div class="col-md-8">
                 <h5>WebProgramingUnpas</h5>
