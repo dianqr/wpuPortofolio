@@ -158,7 +158,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
 
 
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio" >
+    <section class="portfolio" id="portfolio" style="background-color: #a8dadc; padding: 60px 0; color: #333;">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -168,61 +168,44 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/8.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Mengedit video disalah satu program DKTV yakni Jelajah Rasa eps Daun Cobek.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/7.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Menjadi MC di acara Penganugerahaan Pegawai Terbaik, Pegawai Teladan, dan Penetapan Agen Perubahan di Pengadilan Militer I-03 Padang.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/9.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Meredesain website Pengadilan MiliterI-03 Padang.</p>
               </div>
             </div>
           </div>   
         </div>
 
-        <div class="row">
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
+            <div class="row">
+      <div class="col-md-4 offset-md-4 mb-4">
+        <div class="card text-center">
+          <img class="card-img-top" src="img/thumbs/4.png" alt="Project Movie">
+          <div class="card-body">
+            <h5 class="card-title">Project REST API Movie</h5>
+            <p class="card-text">Aplikasi berbasis PHP yang menampilkan data film menggunakan REST API.</p>
+            <a href="wpu-movie/index.html" class="btn btn-primary">Lihat Project</a>
           </div>
         </div>
       </div>
+    </div>
     </section>
 
 
