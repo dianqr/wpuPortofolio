@@ -121,7 +121,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
               <div class="col">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                src="https://www.youtube.com/embed/<?= $latesVideoId ?>rel=0" title="YouTube video" allowfullscreen></iframe>
+                src="https://www.youtube.com/embed/<?= $latesVideoId ?>?rel=0" title="YouTube video" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
           <div class="col-md-5">
             <div class="row">
               <div class="col-md-4">
-                <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail">
+                <img src="img/profile3.jpg" width="200" class="rounded-circle img-thumbnail">
               </div>
               <div class="col-md-8">
                 <h5>@dianqr_</h5>
@@ -168,18 +168,27 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/8.jpg" alt="Card image cap">
+              <div class="embed-responsive embed-responsive-16by9 mb-2">
+                <iframe class="embed-responsive-item" 
+                  src="https://www.youtube.com/embed/T2a_gZ5xf2I?feature=shared"?rel=0 
+                  allowfullscreen></iframe>
+              </div>
               <div class="card-body">
-                <p class="card-text">Mengedit video disalah satu program DKTV yakni Jelajah Rasa eps Daun Cobek.</p>
+                <p class="card-text">Mengedit program-program di DKTV.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/7.jpg" alt="Card image cap">
+
+              <div class="embed-responsive embed-responsive-16by9 mb-2">
+                <iframe class="embed-responsive-item" 
+                  src="https://www.youtube.com/embed/6AKV6aYRLWw?feature=shared"?rel=0 
+                  allowfullscreen></iframe>
+              </div>
               <div class="card-body">
-                <p class="card-text">Menjadi MC di acara Penganugerahaan Pegawai Terbaik, Pegawai Teladan, dan Penetapan Agen Perubahan di Pengadilan Militer I-03 Padang.</p>
+                <p class="card-text">Menjadi MC di acara Penganugerahaan Pegawai Terbaik, Pegawai Teladan, dan Penetapan Agen Perubahan dan mengedit video di Pengadilan Militer I-03 Padang.</p>
               </div>
             </div>
           </div>
@@ -194,18 +203,31 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
           </div>   
         </div>
 
-            <div class="row">
-      <div class="col-md-4 offset-md-4 mb-4">
-        <div class="card text-center">
-          <img class="card-img-top" src="img/thumbs/4.png" alt="Project Movie">
-          <div class="card-body">
-            <h5 class="card-title">Project REST API Movie</h5>
-            <p class="card-text">Aplikasi berbasis PHP yang menampilkan data film menggunakan REST API.</p>
-            <a href="wpu-movie/index.html" class="btn btn-primary">Lihat Project</a>
+          <div class="row">
+            <div class="col-md-4 offset-md-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Project REST API Movie</h5>
+                <p class="card-text">Aplikasi berbasis PHP yang menampilkan data film menggunakan REST API.</p>
+              <a href="wpu-movie/index.html" class="btn btn-primary">Lihat Project</a>
+              </div>
+            </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+
+          <div class="row">
+            <div class="col-md-4 offset-md-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/10.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Project REST API Menu Restaurant</h5>
+                <p class="card-text">Aplikasi berbasis PHP yang menampilkan data menu makanan menggunakan REST API.</p>
+              <a href="wpu-hut/latihan2.html" class="btn btn-primary">Lihat Project</a>
+              </div>
+            </div>
+            </div>
+          </div>
     </section>
 
 
