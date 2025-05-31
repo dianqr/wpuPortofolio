@@ -12,16 +12,27 @@ curl_close($curl);
 return json_decode($result, true);
 }
 
-$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCzCedBCSSltI1TFd3bKyN6g&key=AIzaSyBmK5hhKlRz1Dq0DaRTjMI55-ZT5k7cfXk');
+$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCzCedBCSSltI1TFd3bKyN6g&key=AIzaSyAWeO15qTlkXhBAX_jEhROXfUgvLlZ7mAM');
 
 $youtubeProfilePic = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
 $channelName = $result['items'][0]['snippet']['title'];
 $subscriber = $result['items'][0]['statistics']['subscriberCount'];
 
 //lates video
-$urlLatesVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyBmK5hhKlRz1Dq0DaRTjMI55-ZT5k7cfXk&channelId=UCzCedBCSSltI1TFd3bKyN6g&maxResults=1&order=date&part=snippet';
+$urlLatesVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyAWeO15qTlkXhBAX_jEhROXfUgvLlZ7mAM&channelId=UCzCedBCSSltI1TFd3bKyN6g&maxResults=1&order=date&part=snippet';
 $result = get_CURL($urlLatesVideo);
 $latesVideoId = $result['items']['0']['id']['videoId'];
+
+$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCOpMvwC2IUQDH1W-fyVX-5w&key=AIzaSyAWeO15qTlkXhBAX_jEhROXfUgvLlZ7mAM');
+
+$youtubeProfilePic1 = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
+$channelName1 = $result['items'][0]['snippet']['title'];
+$subscriber1 = $result['items'][0]['statistics']['subscriberCount'];
+
+//lates video
+$urlLatesVideo1 = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyAWeO15qTlkXhBAX_jEhROXfUgvLlZ7mAM&channelId=UCOpMvwC2IUQDH1W-fyVX-5w&maxResults=1&order=date&part=snippet';
+$result = get_CURL($urlLatesVideo1);
+$latesVideoId1 = $result['items']['0']['id']['videoId'];
 
 ?>
 
@@ -38,7 +49,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>My Portfolio</title>
+    <title>My Portofolio</title>
   </head>
   <body>
 
@@ -60,7 +71,10 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
               <a class="nav-link" href="#sosmed">Sosial Media</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portofolio">Portofolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -102,8 +116,8 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
     </section>
 
 
-    <!--Youtube & IG -->
-    <section class="social bg-light" id="sosmed">
+    <!--Youtube-->
+    <section class="sosmed bg-light" id="sosmed">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -111,6 +125,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
           </div>
         </div>
 
+        
         <div class="row justify-content-center">
           <div class="col-md-5">
             <div class="row">
@@ -132,43 +147,40 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
               </div>
             </div>
           </div>
+
+          
           <div class="col-md-5">
             <div class="row">
               <div class="col-md-4">
-                <img src="img/profile3.jpg" width="200" class="rounded-circle img-thumbnail">
+                <img src="<?= $youtubeProfilePic1; ?>" width="200" class="rounded-circle img-thumbnail">
               </div>
               <div class="col-md-8">
-                <h5>@dianqr_</h5>
-                <p>1012 followers.</p>
+                <h5><?= $channelName1; ?></h5>
+                <p><?= $subscriber1; ?> Subscriber.</p>
+                <div class="g-ytsubscribe" data-channelid="UCOpMvwC2IUQDH1W-fyVX-5w" data-layout="default" data-count="default"></div>
               </div>
             </div>
 
             <div class="row mt-3 pb-3">
               <div class="col">
-                <div class="ig-thumbnail">
-                  <img src="img/thumbs/1.png">
-                </div>
-                <div class="ig-thumbnail">
-                  <img src="img/thumbs/2.png">
-                </div>
-                <div class="ig-thumbnail">
-                  <img src="img/thumbs/3.png">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/<?= $latesVideoId1 ?>?rel=0" title="YouTube video" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+        
       </div>
     </section>
 
-
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio" style="background-color: #a8dadc; padding: 60px 0; color: #333;">
+    <!-- Project -->
+    <section class="project" id="project" style="background-color: #a8dadc; padding: 60px 0; color: #333;">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
-            <h2>Portfolio</h2>
+            <h2>Project</h2>
           </div>
         </div>
         <div class="row">
@@ -237,9 +249,52 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
           </div>
     </section>
 
+    <!-- portofolio -->
+    <section class="portofolio bg-light" id="portofolio">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h2>Portofolio</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/thumbs/12.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <p class="card-text">Secretary for Human Resource Development HMPS SI</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/thumbs/13.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <p class="card-text">Finance Division</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/thumbs/14.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <p class="card-text">Secretary of the seminar committee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Contact -->
-    <section class="contact bg-light" id="contact">
+    <section class="contact" id="contact" style="background-color: #a8dadc; padding: 60px 0; color: #333;">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
