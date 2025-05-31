@@ -68,9 +68,9 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
     <div class="jumbotron" id="home">
       <div class="container">
         <div class="text-center">
-          <img src="img/profile1.png" class="rounded-circle img-thumbnail">
-          <h1 class="display-4">Sandhika Galih</h1>
-          <h3 class="lead">Lecturer | Programmer | Youtuber</h3>
+          <img src="img/profile.jpg" class="rounded-circle img-thumbnail">
+          <h1 class="display-4">Dian Sayyidah Khairani</h1>
+          <h3 class="lead">Student College | Programmer | Editor</h3>
         </div>
       </div>
     </div>
