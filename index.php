@@ -57,7 +57,13 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#sosmed">Sosial Media</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -97,7 +103,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
 
 
     <!--Youtube & IG -->
-    <section class="social bg-light" id="social">
+    <section class="social bg-light" id="sosmed">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -197,14 +203,15 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
             <div class="card">
               <img class="card-img-top" src="img/thumbs/9.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Meredesain website Pengadilan MiliterI-03 Padang.</p>
+                <p class="card-text">
+                  <a href="https://dilmil-padang.go.id/" target="_blank" rel="noopener noreferrer">Meredesain website Pengadilan MiliterI-03 Padang.</a></p>
               </div>
             </div>
           </div>   
         </div>
 
           <div class="row">
-            <div class="col-md-4 offset-md-4 mb-4">
+            <div class="col-md-4 mb-4">
             <div class="card">
               <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
               <div class="card-body">
@@ -214,9 +221,9 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
               </div>
             </div>
             </div>
-          </div>
+          
 
-          <div class="row">
+
             <div class="col-md-4 offset-md-4 mb-4">
             <div class="card">
               <img class="card-img-top" src="img/thumbs/10.jpg" alt="Card image cap">
@@ -245,15 +252,16 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
             <div class="card bg-primary text-white mb-4 text-center">
               <div class="card-body">
                 <h5 class="card-title">Contact Me</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Instagram = dianqr_</p>
+                <p class="card-text">WhatsApp = 0812xxxxxxxx</p>
               </div>
             </div>
             
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Setiabudhi No. 193, Bandung</li>
-              <li class="list-group-item">West Java, Indonesia</li>
+              <li class="list-group-item">My Organization = DKTV UIN IB</li>
+              <li class="list-group-item">Koto Tangah, Padang</li>
+              <li class="list-group-item">West Sumatera, Indonesia</li>
             </ul>
           </div>
 
@@ -292,7 +300,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p>Copyright &copy; 2018.</p>
+            <p>Copyright &copy; 2025.</p>
           </div>
         </div>
       </div>
