@@ -77,7 +77,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
 
 
     <!-- About -->
-    <section class="about" id="about">
+    <section class="about" id="about" style="background-color: #a8dadc; padding: 60px 0; color: #333;">
       <div class="container">
         <div class="row mb-4">
           <div class="col text-center">
@@ -86,10 +86,10 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
         </div>
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>Seorang anak perempuan pertama dari Bapak Gultom dan Ibu Koto yang saat ini tengah menempuh pendidikan S1 di UIN Imam Bonjol Padang jurusan sistem informasi. Seseorang yang memiliki cita-cita sebagai pengusaha ice cream sejak masa kecilnya.</p>
           </div>
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>Menjadi figur anak pertama membuat saya untuk menjadi contoh yang baik untuk para adik tersayang. Mulai mengikuti sebuah organisasi mahasiswa jurusan dan unit kegiatan DKTV menambah bumbu kehidupan perkuliahan saya agar tidak monoton dan menjadi jalan untuk mencoba hal-hal baru.</p>
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@ $latesVideoId = $result['items']['0']['id']['videoId'];
 
 
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" >
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
